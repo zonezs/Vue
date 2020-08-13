@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script src="./js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		
+		<div id="app">			
+			<h2>百度一下</h2>
+			<!-- v-bind 动态绑定属性 -->
+			<a v-bind:href="aHref">百度</a>
+			<!-- v-bind 动态绑定的语法糖 :  如下 -->
+			<a :href="aHref">百度</a>
+		</div>
+		
+		<script type="text/javascript">
+			const app = new Vue({
+				el: '#app',
+				data: {
+					message: 'http://www.baidu.com',
+					aHref: 'http://www.baidu.com'
+				}
+			})
+		</script>
+	</body>
+</html>
