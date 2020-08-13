@@ -1,4 +1,4 @@
-### 语法糖 (插值指令)
+### 语法糖 (插值指令) 对应的 Mustache 指令
 
 > v-for item in message
 ```
