@@ -13,3 +13,8 @@
    <button type="button" @click="sub">-</button>
 </div>
 ```
+
+> v-once 当数据变化时,不会随着改变
+```
+   <h2 v-once>你好啊</h2>		
+```
