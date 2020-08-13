@@ -5,9 +5,7 @@
 <li v-for="item in message">{{item}}</li>
 ```
 
-> v-on
-
-> @click
+> v-on @click
 ```
 <div id="app">
    <h2>当前计数: {{counter}}</h2>
