@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script src="./js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="app">
+			<h2>{{firstName + " " + lastName}}</h2>
+			
+			<h2>{{totalName}}</h2>
+		</div>
+		
+		<script type="text/javascript">
+			const vm = new Vue({
+				el: '#app',
+				data: {
+					firstName: 'Kobe',
+					lastName: 'Bryant'
+				},
+				computed: {
+					totalName: function() {
+						return this.firstName + " " + this.lastName
+					}
+				},
+				methods: {
+					
+				},
+				//  还可以放生命周期函数
+			})
+		</script>
+	</body>
+</html>
