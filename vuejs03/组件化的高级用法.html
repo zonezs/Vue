@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script src="./js/vue.js" type="text/javascript" charset="utf-8"></script>
+		
+		<div id="app">
+			<h3>高级用法</h3>
+			<cpn></cpn>
+			<cpn>
+				<button type="button">我替换了插槽内容</button>
+			</cpn>
+			
+		</div>
+		
+		<template id="cpnc">
+			<div>
+				<h3>哈哈哈</h3>
+				<h2>呵呵呵</h2>
+				<slot>我是一个插槽</slot>
+			</div>
+		</template>
+		
+		<script type="text/javascript">
+			
+			Vue.component("cpn", {
+				template: "#cpnc"
+			})
+			
+			const vm = new Vue({
+				el: "#app",
+				data: {
+					message: "msg"
+				}
+			})
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script src="./js/vue.js" type="text/javascript" charset="utf-8"></script>
+	
+	
+	<body>
+		<div id="app">
+			{{message}}			
+		</div>
+		
+		<script type="text/javascript">
+			
+			const vm = new Vue({
+				el: "#app",
+				data: {
+					message: "hello vue"
+				},
+				methods: {
+					
+				},
+				computed: {
+				
+				}
+			})
+			
+			// v-model.lazy 
+			// v-model.number
+			// v-model.trimp  // 去除空格
+			
+			
+		</script>
+		
+	</body>
+</html>

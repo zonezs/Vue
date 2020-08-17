@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script src="./js/vue.js" type="text/javascript" charset="utf-8"></script>
+		
+		<div id="app">
+			<h2>kfdsffsdf</h2>
+			
+			<cpn></cpn>			
+		</div>
+		
+		<template id="tem_cpn">
+			<div>
+				<div>
+					<h2>组件化</h2>
+					<h3>组件测试</h3>
+				</div>
+			</div>
+		</template>
+		
+		<script type="text/javascript">
+			
+			const cpnc = Vue.extend({
+				template: tem_cpn
+			})
+			
+			// Vue.component('my-cpn', cpnC)
+			
+			const vm = new Vue({
+				el: "#app",
+				data: {
+					
+				},
+				methods: {
+					
+				},
+				computed: {
+					
+				},
+				components: {  // 局部组件
+					// 使用组件时的标签名
+					cpn: cpnc
+				}
+			})
+		</script>
+		
+		
+	</body>
+</html>
