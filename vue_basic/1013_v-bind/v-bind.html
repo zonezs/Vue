@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind 模板语法</title>
+
+    <!-- 引入Vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+    <!-- 准备一个容器 -->
+    <div id="root">
+        <h5>Vue实例，{{name}}</h5>
+        <h5>Vue实例，{{height}}</h5>
+
+        <hr/>
+        <h3>指令语法</h3>
+        <!-- 
+            v-bind 指令语法
+            简写 ‘:’
+         -->
+        <a v-bind:href="url">点我去百度导航站1</a>
+
+        <a :href="url">点我去百度导航站2</a>
+    </div>
+
+    <!-- 创建Vue实例 -->
+    <script type="text/javascript">
+        new Vue({
+            el: '#root',
+            data: {
+                name: 'vue',
+                height: 180,
+                weight: 160,
+                url: 'http://www.baidu.com'
+            }
+        })
+
+    </script>
+    
+</body>
+</html>
