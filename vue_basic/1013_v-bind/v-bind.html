@@ -11,11 +11,14 @@
 <body>
     <!-- 准备一个容器 -->
     <div id="root">
+        <h3>1、插值语法</h3>
         <h5>Vue实例，{{name}}</h5>
         <h5>Vue实例，{{height}}</h5>
+        <!-- 多层级的数据结构 -->
+        <h5>Vue实例，{{school.name}}</h5>
 
         <hr/>
-        <h3>指令语法</h3>
+        <h3>2、指令语法</h3>
         <!-- 
             v-bind 指令语法
             简写 ‘:’
@@ -33,7 +36,11 @@
                 name: 'vue',
                 height: 180,
                 weight: 160,
-                url: 'http://www.baidu.com'
+                url: 'http://www.baidu.com',
+                // 对于多级 json 数据配置问题
+                school: {
+                    name: '清华大学'
+                }
             }
         })
 
