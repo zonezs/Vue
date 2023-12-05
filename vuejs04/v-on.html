@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>v-on 事件的处理</title>
+    </head>
+    <script src="./js/vue.js" type="text/javascript"></script>
+
+    <body>
+        <div id="app">
+            {{message}}
+
+            <h2>我是测试标题</h2>
+
+            <button @click="showInfo">v-on 测试按钮</button>
+
+            <button @click="showInfoParam(888)">v-on 测试传参按钮</button>
+
+        </div>
+
+        <script type="text/javascript">
+            const vm = new Vue({
+                el: "#app",
+                data: {
+                    message: "test"
+                },
+                methods: {
+                    showInfo(event) {
+                        alert('v-on alert!!!~~~')
+                    },
+                    showInfoParam(num) {
+                        console.log(num)
+                        alert(num)
+                    }
+                },
+                computed: {
+
+                }
+            }) 
+        </script>
+    </body>
+</html>
