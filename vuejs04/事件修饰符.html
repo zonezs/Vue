@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-on 事件修饰符</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+
+<body>
+    <div id="app">
+
+        <!-- 
+            事件修饰符：
+            1、prevent：阻止默认事件执行；（比如阻止点击按钮事件响应）（常用）
+            2、stop：阻止事件冒泡；（常用）
+            3、once：事件只执行一次；（常用）
+            
+            4、capture：使用事件的捕获模式；
+            5、self：只有 e.target 是当前操作对象才会起作用
+            6、passive：事件的默认行为会立即执行，无需等待事件结果
+         -->
+
+        <!-- 1、prevent：阻止默认事件执行；（比如阻止点击按钮事件响应） -->
+        <a href="https://www.baidu.com" @click.prevent="showInfo"> {{jumpName}} </a>
+
+        <br />
+
+        <!-- 2、stop：阻止事件冒泡； -->
+        <div id="demo1" @click="showInfo">
+            <!-- 如果不加 stop 的话，那么会弹窗两次，加上 stop 的话，则会阻止掉一次点击事件 -->
+            <a href="https://www.baidu.com" @click.stop="showInfo"> stop：阻止事件冒泡 </a>
+        </div>
+
+        <!-- 3、once：事件只执行一次； -->
+        <button @click.once="showInfo">once：只会执行事件一次</button>
+
+    </div>
+
+    <script type="text/javascript">
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                jumpName: "跳转去百度吧"
+            },
+            methods: {
+                showInfo () {
+                    alert('跳转了')
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
