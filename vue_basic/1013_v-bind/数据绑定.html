@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据绑定</title>
+
+    <!-- 1、引入Vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+
+</head>
+<body>
+    <!-- 2、准备Vue容器 -->
+    <div id="root">
+        <h2>数据绑定</h2>
+        <hr/>
+
+        <h5>数据绑定测试，{{name}}</h5>
+    </div>
+
+    <!-- 3、创建Vue实例 -->
+    <script type="text/javascript" >
+        new Vue({
+            el: '#root',
+            data: {
+                name: 'zhangsan',
+                sex: '0',
+                height: '180'
+            }
+        })
+    </script>
+    
+</body>
+</html>
