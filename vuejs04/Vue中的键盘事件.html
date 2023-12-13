@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 中的键盘事件</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+
+<body>
+    <div id="app">
+
+        <H2>{{name}}</H2>
+
+        <!-- 
+            Vue 中比较常用的九个按键:
+            enter: 回车按键
+            delete: 删除键
+            esc: 退出键
+            space: 空格键
+            tab: 换行键
+            up: 上键
+            down: 下键
+            left: 左键
+            right: 右键
+         -->
+
+        <input type="text" placeholder="通过输入框，并且利用确定键确认输出结果" @keyup.enter="showInfo">
+    </div>
+
+    <script type="text/javascript">
+        const vm = new Vue({
+            el: "#app",
+            data: {
+                name: "Vue 键盘事件",
+                age: 18
+            },
+            methods: {
+                showInfo (e) {
+                    // if (e.keyCode !== 13) return
+                    console.log(e.key, e.keyCode)
+                    console.log(e.target.value)
+                }
+            }
+        }) 
+    </script>
+</body>
+
+</html>
