@@ -33,14 +33,25 @@
             }
         },
         watch: {
-            isHot: {
-                immediate: true,  // 初始化时让 handler 调用一下 (默认为 faslse，不调用)
-                // handler 什么时候调用？当 isHot 发生改变时。
-                // 并且可以通过参数拿到改变前后的值
-                handler (newValue, oldValue) {
-                    console.log('isHot 被修改了', newValue, oldValue)
-                }
+            /*
+            简写方式
+            */
+            isHot (newValue, oldValue) {
+                console.log('isHot 被修改了', newValue, oldValue)
             }
+
+            /*
+            完整写法
+                isHot: {
+                    immediate: true,  // 初始化时让 handler 调用一下 (默认为 faslse，不调用)
+                    // deep: true,  // 深度监视：可以监视到对象结构中的所有属性改变
+                    // handler 什么时候调用？当 isHot 发生改变时。
+                    // 并且可以通过参数拿到改变前后的值
+                    handler (newValue, oldValue) {
+                        console.log('isHot 被修改了', newValue, oldValue)
+                    }
+                }
+            */
         }
     })
 
