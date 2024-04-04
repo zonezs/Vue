@@ -19,3 +19,5 @@ package.json       --- 信息描述文件
 README.md          --- 注释文件
 vite.config.js     --- Vue 配置文件
 ```
+
+### 第 21 节：组件部分
