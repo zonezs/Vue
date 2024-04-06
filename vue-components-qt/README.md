@@ -27,3 +27,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+# 本项目主要是学习组件的嵌套关系
