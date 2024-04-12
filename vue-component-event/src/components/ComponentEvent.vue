@@ -1,9 +1,9 @@
 <template>
-    <h3>{{ title }}</h3>
+    <h3>组件事件 Event</h3>
     
-    <button @click="clickHandler">{{ btnTitle }}</button>
+    <Child @someEvent="getHandler" />
 
-    <Child />
+    <p>父元素接收到的子元素数据：{{ reciveMsg }}</p>
 </template>
 
 <script>
@@ -11,17 +11,17 @@ import Child from './Child.vue'
 export default {
     data() {
         return {
-            title: "组件事件 Event",
-            btnTitle: "点我调用子组件"
+            reciveMsg: ""
         }
     },
     components: {
         Child
     },
     methods: {
-        clickHandler() {
-            console.log("调用了子组件");
+        getHandler(data) {
+            console.log("父元素接收到了", data)
+            this.reciveMsg = data
         }
-    }
+    }, 
 }
 </script>
