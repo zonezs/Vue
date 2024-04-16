@@ -12,7 +12,7 @@ export default {
         }
     },
     methods: {
-        clickEventHandler() {
+        clickEventHandler() { 
             // 通过自定义事件向父元素传递数据，支持传递各种类型的参数过去
             this.$emit("someEvent", this.msg)
         }

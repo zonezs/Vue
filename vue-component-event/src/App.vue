@@ -16,4 +16,4 @@ export default {
       组件之间的数据传递方案：
       1、父传子：props
       2、子传父：this.$emit
- -->
+ --> 
