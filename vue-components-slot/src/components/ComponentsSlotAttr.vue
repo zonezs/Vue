@@ -11,6 +11,7 @@
 
 <script>
 export default {
+
     data() {
         return {
             childMsg: "子组件中的插槽数据",
