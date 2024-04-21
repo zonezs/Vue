@@ -7,6 +7,13 @@
    -->
   <component :is="tableComponent"></component>
 
+  <!-- 
+    通过使用 keep-alive 标签可以使得组件保存存活状态，并没有被销毁
+   -->
+  <keep-alive>
+    <component :is="tableComponent"></component>
+  </keep-alive>
+
   <button @click="changedTabHandler">切换Tab组件</button>
 
 </template>
@@ -26,7 +33,6 @@ export default {
   },
   methods: {
     changedTabHandler() {
-      console.log(111);
       this.tableComponent = this.tableComponent === "ComponentA" ? "ComponentB" : "ComponentA"
     }
   },
