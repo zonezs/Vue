@@ -1,5 +1,5 @@
 <template>
-  <h3>异步组件</h3>
+  <h3>异步组件的动态懒加载模式</h3>
 
   <component :is="tableComponent"></component>
 
