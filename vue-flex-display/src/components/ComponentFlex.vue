@@ -12,14 +12,15 @@
 <style scoped>
 div {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content:space-between;  /** 先两边贴边，再平均分配剩余空间 */
     width: 80%;
     height: 300px;
     background-color: pink;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-items: center; */
     align-content: space-around;
+    flex-flow: row wrap;  /** 相当于 flex-direction：row, flex-wrap: wrap */
 }
 
 div span {
@@ -39,3 +40,5 @@ div span {
 <!-- align-items：设置侧轴上子元素的排列方式，通常在子项为单行的时候使用 -->
 
 <!-- align-content: 设置侧轴上子元素的排列方式，用于多行 -->
+
+<!-- flex-flow：是对 flex-direction 和 flex-wrap 的简写 -->
