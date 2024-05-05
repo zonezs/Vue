@@ -42,11 +42,3 @@ div span {
 <!-- align-content: 设置侧轴上子元素的排列方式，用于多行 -->
 
 <!-- flex-flow：是对 flex-direction 和 flex-wrap 的简写 -->
-
-
-<!-- 
-    flex 布局中子项中属性：
-        flex 子项目占的份数
-        align-self 控制子项自己在侧轴的排列方式
-        order 属性定义子项的排列顺序
--->
