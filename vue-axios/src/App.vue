@@ -14,7 +14,6 @@ export default {
     }
   },
   mounted() {
-
     // get 请求
     axios({
       method:'get',
@@ -24,11 +23,20 @@ export default {
       this.result = res.data.result
     })
 
+    /**
+     * 那么 get 请求也可以简写为以下方式
+     */
+    axios.get('https://api.oioweb.cn/api/SoulWords').then(res => {
+      console.log(res.data);
+    })
+
+
+
     /** 
-     * post 请求，需要对 data 中参数进行 string 遍历
-     * npm install --save querystring
-     * import querystring from 'querystring'
-     * querystring.stringify()
+     * post 请求，需要对 data 中参数进行 string 转换一下格式
+     * 1、npm install --save querystring
+     * 2、import querystring from 'querystring'
+     * 3、querystring.stringify()
     */
     axios({
       method: 'post',
@@ -38,6 +46,15 @@ export default {
       })
     })
     .then (res => {
+      console.log(res.data);
+    })
+
+    /**
+     * 那么 post 请求也可以简写为以下方式，在链接的后面直接带上 querystring.stringify({}) 转换参数即可
+     */
+    axios.post('https://api.oioweb.cn/api/weather/weather', querystring.stringify({
+      'city_name': '合肥市'
+    })).then(res => {
       console.log(res.data);
     })
   }
