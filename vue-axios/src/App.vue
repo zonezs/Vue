@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+
+import axios from 'axios' /** 单个 vue 文件局部引入 axios 请求 */
 import querystring from 'querystring'
 export default {
   data() {
