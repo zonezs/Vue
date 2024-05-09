@@ -143,52 +143,52 @@ span {
 /* 粉色 */
 .nav-gird-li:nth-child(6) {
     background-color: #FFF5F2;
-    border-right: 0.5px solid #fff;
-    border-bottom: 0.5px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .nav-gird-li:nth-child(11) {
     background-color: #FFF5F2;
-    border-right: 0.5px solid #fff;
+    border-right: 1px solid #fff;
 }
 /* 青色 */
 .nav-gird-li:nth-child(7) {
     background-color: #EFF9FF;
-    border-right: 0.5px solid #fff;
-    border-bottom: 0.5px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .nav-gird-li:nth-child(12) {
     background-color: #EFF9FF;
-    border-right: 0.5px solid #fff;
+    border-right: 1px solid #fff;
 }
 /* 淡紫色 */
 .nav-gird-li:nth-child(8) {
     background-color: #F3F5FF;
-    border-right: 0.5px solid #fff;
-    border-bottom: 0.5px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .nav-gird-li:nth-child(13) {
     background-color: #F3F5FF;
-    border-right: 0.5px solid #fff;
+    border-right: 1px solid #fff;
 }
 /* 偏绿色 */
 .nav-gird-li:nth-child(9) {
     background-color: #ECFDF8;
-    border-right: 0.5px solid #fff;
-    border-bottom: 0.5px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .nav-gird-li:nth-child(14) {
     background-color: #ECFDF8;
-    border-right: 0.5px solid #fff;
+    border-right: 1px solid #fff;
 }
 /* 偏橘色 */
 .nav-gird-li:nth-child(10) {
     background-color: #FFF9F2;
-    border-right: 0.5px solid #fff;
-    border-bottom: 0.5px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 .nav-gird-li:nth-child(15) {
     background-color: #FFF9F2;
-    border-right: 0.5px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 /* css选择器大于第6个的情况，以下相当于 6-15 */
